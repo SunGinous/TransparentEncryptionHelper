@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/listview_shape"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentTop="true"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/item_iv"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/imageview_shape"
+        android:padding="5dp" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:id="@+id/item_bnt"
+        android:text="@string/decrypt"
+        android:textSize="15dp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/btn_color"
+        android:layout_alignBottom="@+id/item_iv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:focusable="false"
+        android:longClickable="false"/><!--这句很关键，否则button会抢夺item的焦点-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/item_text"
+        android:textSize="10dp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/item_iv"
+        android:layout_marginLeft="45dp"/>
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:id="@+id/item_from"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    tools:context="com.example.administrator.myironguard.Activity.SettingActivity">
+
+    <include layout="@layout/setbar"
+        android:id="@+id/include_setting"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/icon_dunpai"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="@string/version"
+        android:textSize="20dp"
+        android:textColor="@color/colorTitleAlpha"/>
+    <!--<Button-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/btn_change"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@drawable/btn2_color"-->
+        <!--android:text="@string/change"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textColor="@color/colorWhite" />-->
+    <!--<Button-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/btn_mention"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:text="@string/mention"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@drawable/btn2_color"/>-->
+    <!--<Button-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/btn_root"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/btn2_color"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:textSize="20dp"-->
+        <!--android:text="@string/root"/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/list_menu"
+        android:dividerHeight="0.5dp"
+        android:divider="@drawable/lisitview_divider"
+        android:background="@color/colorWhite"
+        />
+
+    <!--<Button-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:id="@+id/ops"/>-->
+
+</LinearLayout>

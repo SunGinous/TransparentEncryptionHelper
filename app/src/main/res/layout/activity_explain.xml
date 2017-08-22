@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_explain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.example.administrator.myironguard.Activity.ExplainActivity">
+
+    <include layout="@layout/explainbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp"
+        android:lineSpacingExtra="@dimen/activity_vertical_margin"
+        android:layout_gravity="center"
+        android:text="@string/first"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="@dimen/activity_vertical_margin"
+        android:text="@string/second"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="50dp"
+        android:layout_gravity="center"
+        android:lineSpacingExtra="@dimen/activity_vertical_margin"
+        android:text="@string/third"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"/>
+</LinearLayout>

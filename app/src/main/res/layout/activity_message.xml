@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack"
+    tools:context="com.example.administrator.myironguard.Activity.MessageActivity">
+
+    <include layout="@layout/simibar"
+        android:id="@+id/include_message"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:id="@+id/image_white"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_add"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn2_color"
+        android:text="@string/add"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/linear"
+        android:layout_below="@id/include_message"
+        android:layout_above="@id/image_white">
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lv_sms"
+                android:layout_weight="1"
+                android:divider="@color/colorGrey"
+                android:dividerHeight="0.5dp"
+                android:overScrollMode="never"
+                android:clickable="true" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

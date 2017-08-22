@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTitle"
+    tools:context="com.example.administrator.myironguard.Activity.Login_Activity">
+
+    <include layout="@layout/titlebar"
+        android:id="@+id/include" />
+
+
+    <!--<EditText-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/userName"-->
+        <!--android:theme="@style/MyEditText"-->
+        <!--android:inputType="text"-->
+        <!--android:layout_below="@id/include"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:hint="@string/user"-->
+        <!--android:textColorHint="@color/colorGrey"-->
+        <!--android:textColor="@color/colorBlack"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:background="@color/colorWhite" />-->
+    <!--<View-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:id="@+id/view"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="200dp"-->
+        <!--android:background="@color/colorGrey"/>-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:theme="@style/MyEditText"
+        android:id="@+id/passWord"
+        android:inputType="textPassword"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorShadow"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="10dp"
+        android:background="@drawable/edittext_shape" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_tip"
+        android:layout_marginTop="150dp"
+        android:layout_alignLeft="@id/passWord"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_regist"
+        android:layout_below="@id/passWord"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn2_color"
+        android:text="@string/regist"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_login"
+        android:layout_below="@id/btn_regist"
+        android:text="@string/login"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn2_color"
+        android:textSize="20dp"
+        android:textColor="@color/colorWhite"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="IronGuard"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>

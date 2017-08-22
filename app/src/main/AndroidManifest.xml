@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.myironguard">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-permission android:name="android.permission.BROADCAST_SMS"/>
+    <uses-permission android:name="android.permission.BROADCAST_WAP_PUSH"/>
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!-- <uses-permission android:name="android.hardware.camera" /> -->
+    <!-- <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_dunpai"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <receiver android:name=".Receiver.CameraAction_Receiver">
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_PICTURE" />
+                <!-- <action android:name="com.android.camera.NEW_PICTURE" /> -->
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Receiver.SMSReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Service.Bitmap_Service"
+            android:exported="false" />
+        <service android:name=".Service.Destest_service" />
+        <service android:name=".Service.Rsatest_Service" />
+
+        <activity
+            android:name=".Activity.PictureActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="false"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Activity.Login_Activity"
+            android:alwaysRetainTaskState="true"
+            android:autoRemoveFromRecents="false"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Activity.EntryActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.EncryptActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Activity.MessageActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Activity.BaseActivity" />
+        <activity
+            android:name=".Activity.ChatActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Service.MessageService"
+            android:exported="false" />
+        <service
+            android:name=".Service.NotifyService"
+            android:exported="false" />
+
+        <service
+            android:name=".Service.DeleteMsgService"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.ChangePwdActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <activity
+            android:name=".Activity.ExplainActivity"
+            android:alwaysRetainTaskState="false"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
+    </application>
+
+</manifest>

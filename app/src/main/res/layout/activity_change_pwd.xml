@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_change_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTitle"
+    tools:context="com.example.administrator.myironguard.Activity.ChangePwdActivity">
+
+    <include layout="@layout/changebar"/>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/edit_old"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_shape"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:hint="@string/oldpwd"
+        android:padding="10dp"
+        android:textColorHint="@color/colorShadow"
+        android:textColor="@color/colorBlack"
+        android:theme="@style/MyEditText" />
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/edit_new"
+        android:inputType="textPassword"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_shape"
+        android:hint="@string/newpwd"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorShadow"
+        android:padding="10dp"
+        android:theme="@style/MyEditText"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_sure"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn2_color"
+        android:text="@string/sure"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"/>
+</LinearLayout>

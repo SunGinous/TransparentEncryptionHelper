@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:pivotX="50%" android:pivotY="50%"
+    android:fromDegrees="0"
+    android:toDegrees="360">
+
+    <shape
+        android:shape="ring"
+        android:innerRadiusRatio="3"
+        android:thicknessRatio="8"
+        android:useLevel="false">
+        <gradient
+            android:type="sweep"
+            android:useLevel="false"
+            android:startColor="#6BD3FF"
+            android:centerColor="#FF7121"
+            android:centerY="0.50"
+            android:endColor="#FFFF00" />
+        <!--<gradient-->
+            <!--android:type="sweep"-->
+            <!--android:useLevel="false"-->
+            <!--android:startColor="#2D5873"-->
+            <!--android:centerColor="#7BA696"-->
+            <!--android:centerY="0.50"-->
+            <!--android:endColor="#BFA524" />-->
+        <!--<gradient-->
+            <!--android:centerColor="#FFFFFF"-->
+            <!--android:centerY="0.50"-->
+            <!--android:endColor="#1E90FF"-->
+            <!--android:startColor="#000000"-->
+            <!--android:type="sweep"-->
+            <!--android:useLevel="false" />-->
+    </shape>
+
+</animated-rotate>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_shape"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="确定将该联系人移除加密吗?"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_no2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_left"
+            android:text="取消"
+            android:textColor="@color/colorMGreen"/>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="50dp"
+            android:background="@color/colorGrey"/>
+
+        <Button
+            android:id="@+id/btn_yes2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_right"
+            android:text="确定"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+</LinearLayout>

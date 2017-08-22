@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">透明加密助手</string>
+    <string name="picture">查看图片</string>
+    <string name="mypicture">已加密图片</string>
+    <string name="decrypt">解密</string>
+    <string name="user">用户名</string>
+    <string name="password">登陆密码</string>
+    <string name="regist">注册</string>
+    <string name="login">登陆</string>
+    <string name="manual">手动加密</string>
+    <string name="encrypt">加密</string>
+    <string name="message">短信加密</string>
+    <string name="add">添加联系人</string>
+    <string name="send">发送</string>
+    <string name="write">输入内容</string>
+    <string name="secret">私密联系人</string>
+    <string name="protectcontent">正保护您的隐私安全</string>
+    <string name="protectpic">私密图片</string>
+    <string name="protectcontract">私密联系人</string>
+    <string name="wei">位</string>
+    <string name="zhang">张</string>
+    <string name="setting">设置</string>
+    <string name="version">V1.0.0</string>
+    <string name="change">修改密码</string>
+    <string name="mention">使用说明</string>
+    <string name="root">移除root</string>
+    <string name="oldpwd">输入旧密码</string>
+    <string name="newpwd">输入新密码</string>
+    <string name="sure">确认修改</string>
+    <string name="first">1.返回至桌面后，本软件仍会处于运行状态</string>
+    <string name="second">2.若想彻底关闭本软件，可以从后台管理将本软件移除</string>
+    <string name="third">3.为了时刻捍卫您的隐私安全，请保证本软件一直在后台运行</string>
+</resources>
